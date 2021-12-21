@@ -1,0 +1,21 @@
+﻿<Window x:Class="Utils.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Utils"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="60" Width="90" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" ShowInTaskbar="False" Background="Transparent" Icon="netmonitor.ico">
+    <Grid MouseLeftButtonDown="Grid_MouseLeftButtonDown">
+        <Grid.Resources>
+            <Style TargetType="Label">
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+        </Grid.Resources>
+        <Rectangle x:Name="back1" Fill="Black" Opacity="0.5"></Rectangle>
+        <Label x:Name="Download" Grid.Row="0" Content="↓ 344.55KB/s" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Opacity="1" Width="90" Height="30" HorizontalAlignment="Center" FontSize="12" VerticalAlignment="Top" Margin="0,30,0,0" Foreground="LawnGreen"/>
+        <Label x:Name="Upload" Grid.Row="1" Content="↑ 22.55MB/s" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Opacity="1" Width="90" Height="30" HorizontalAlignment="Center" FontSize="12"  VerticalAlignment="Top" Foreground="Orange"/>
+        
+    </Grid>
+</Window>
